@@ -1,0 +1,27 @@
+grep -c "[]\|[]\|[]공백없이" * | sort -nk2r -t":"
+
+~/myproj/foodfolder$ grep -c "[계란]\|[소금]\|[계란물]" * | sort -nk2r -t":"
+aaa.txt:4
+bbb.txt:3
+ccc.txt:0
+keycm.txt:0
+
+
+
+~/myproj/foodfolder$ cat aaa.txt
+[물]
+[계란]
+[계란물]
+[소금]
+~/myproj/foodfolder$ cat bbb.txt
+[소금물]
+[계란물]
+[소고기]
+[마늘]
+~/myproj/foodfolder$ cat ccc.txt
+[양파]
+[파]
+[마늘]
+[돼지고기]
+
+
